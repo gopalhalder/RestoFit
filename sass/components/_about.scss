@@ -1,0 +1,46 @@
+.about {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+
+  position: relative;
+
+  &__profile {
+    position: absolute;
+    top: -15%;
+    left: 16%;
+    transform: translate(-50%, -50%);
+  }
+
+  // about detail part
+  &__detail {
+    margin-top: 10rem;
+  }
+
+  &__detail-box {
+    display: flex;
+    align-items: center;
+    padding: 3rem 3.5rem;
+
+    &:not(:last-child) {
+      border-bottom: 1px solid #262129;
+    }
+  }
+
+  &__icon-box {
+    margin-right: 5rem;
+    display: flex;
+    align-items: center;
+  }
+
+  // about text part
+  &__description {
+    margin-left: auto;
+    flex: 0 0 50%;
+  }
+}
+
+.gradient-icon {
+  height: 7.8rem;
+  width: 7.8rem;
+}

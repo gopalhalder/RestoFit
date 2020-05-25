@@ -1,0 +1,172 @@
+.gallery {
+  &__title {
+    width: 50%;
+    margin: 0 auto;
+  }
+
+  &__inner {
+    background-color: $color-white;
+  }
+
+  &__outer {
+    background-color: $color-gallery;
+  }
+
+  // GALLERY LIST
+  &__item {
+    list-style: none;
+    display: flex;
+  }
+
+  &__list {
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+  }
+
+  // GALLERY IMAGE
+
+  &__photo {
+    position: relative;
+    background-color: $color-black;
+  }
+
+  &__img {
+    opacity: 0.7;
+    width: 100%;
+    height: auto;
+    display: block;
+    transition: opacity 0.5s;
+  }
+
+  // GALLERY INNER IMAGE HEADING AND CAPTION
+
+  &__caption {
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    padding: 20px 15px 35px;
+  }
+
+  &__heading {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    font-family: "Nunito";
+    color: $color-white;
+    transition: all 0.3s ease-in-out;
+
+    &--sub {
+      font-weight: 400;
+      background-color: $color-gallery;
+      padding: 0.4rem 0.8rem;
+      margin-bottom: 1.5rem;
+      border-radius: 3px;
+      text-transform: uppercase;
+    }
+
+    &--main {
+      line-height: 1;
+      text-transform: capitalize;
+      font-size: 3rem;
+    }
+  }
+
+  &__line {
+    height: 1px;
+    width: 0;
+    margin: 0 auto;
+    background-color: $color-white;
+    display: block;
+    overflow: hidden;
+    transition: all 0.3s ease-in-out;
+  }
+
+  // HOVER IMG
+
+  &__photo:hover &__img {
+    opacity: 0.5;
+  }
+
+  &__photo:hover &__heading {
+    padding-bottom: 2rem;
+  }
+
+  &__photo:hover &__line {
+    width: 60%;
+  }
+
+  // GALLERY SIDE TITLE
+  &__main-title {
+    display: flex;
+    justify-content: center;
+    margin-top: 35%;
+  }
+
+  &__tertiary {
+    font-size: 3.5rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    letter-spacing: 1px;
+    text-transform: capitalize;
+    color: $color-primary;
+    font-family: "Nunito";
+    line-height: 1.2;
+    font-weight: 700;
+    &--count {
+    }
+
+    &--text {
+    }
+  }
+
+  // OFFER
+  &__offer {
+    &--heading {
+      width: 60%;
+      margin: 0 auto;
+    }
+  }
+
+  // COUNTDOWN
+  &__count-down {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+  }
+
+  &__timer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    padding-bottom: 2rem;
+    position: relative;
+    &::before {
+      position: absolute;
+      content: "";
+      height: 1px;
+      width: 80%;
+      margin: 0 auto;
+      background-color: rgba($color-gray-light-1, 0.2);
+      bottom: 0;
+    }
+
+    font-family: "Nunito";
+    &--num {
+      font-size: 8rem;
+      font-weight: 400;
+    }
+
+    &--text {
+      font-size: 3.5rem;
+      text-transform: lowercase;
+    }
+  }
+}

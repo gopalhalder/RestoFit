@@ -1,0 +1,29 @@
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
+}
+
+html {
+  font-size: 62.5%; // 1rem = 10px; 10 / 16 * 100 = 62.5%;
+}
+
+body {
+  box-sizing: border-box;
+}
+
+.row {
+  max-width: 122rem;
+  margin: 0 auto;
+
+  &:not(:last-child) {
+    margin-bottom: 10rem;
+  }
+}
+
+.row2 {
+  max-width: 114rem;
+  margin: 0 auto;
+}

@@ -1,0 +1,5 @@
+@mixin gradient-text {
+  background-image: linear-gradient(to right, $text-color-1, $text-color-2);
+  -webkit-background-clip: text;
+  color: transparent;
+}

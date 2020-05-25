@@ -1,0 +1,73 @@
+.features {
+  &__heading {
+    width: 50%;
+
+    h2 {
+      span::before {
+        left: -23%;
+      }
+    }
+  }
+
+  &__container {
+    margin-top: 5.5rem;
+    display: flex;
+    align-items: center;
+  }
+
+  &__box {
+    width: 100%;
+    padding: 0 2rem;
+    &:not(:last-child) {
+      margin-right: 4rem;
+    }
+    & > *:not(:last-of-type) {
+      margin-bottom: 1.75rem;
+    }
+  }
+
+  &__icon-box {
+    svg {
+      height: 5rem;
+      width: 5rem;
+    }
+  }
+
+  &__title {
+  }
+
+  &__text {
+    p {
+      color: #777;
+    }
+  }
+
+  &__count {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 4rem;
+
+    &--num {
+      height: 2.5rem;
+      width: 2.5rem;
+      padding: 1.2rem;
+      border-radius: 10rem;
+
+      font-size: 1.4rem;
+      font-weight: bold;
+      color: $color-gray-dark-2;
+      border: 2px solid $color-gray-light-4;
+
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+
+    &--line {
+      width: 100%;
+      height: 2px;
+      background-color: $color-gray-light-4;
+    }
+  }
+}

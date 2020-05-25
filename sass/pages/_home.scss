@@ -1,0 +1,39 @@
+.section-about {
+  padding: 8rem 0;
+  background-image: linear-gradient(
+    to top right,
+    #171017,
+    #17152b,
+    #1a090b,
+    #110f1a
+  );
+}
+
+.section-features {
+  padding: 10rem 0;
+  position: relative;
+
+  &__profile {
+    position: absolute;
+    top: 7%;
+    right: -8%;
+    transform: translate(-50%, -50%);
+  }
+}
+
+.section-gallery {
+  padding: 12rem 0 0 0;
+}
+
+.section-subscribe {
+  padding: 10rem 0;
+  background-image: linear-gradient(
+      to top right,
+      rgba($color-white, 0.9),
+      rgba($color-white, 0.9)
+    ),
+    url(../img/subscription-cover.jpg);
+  background-size: cover;
+  background-position: center;
+  height: 100%;
+}
