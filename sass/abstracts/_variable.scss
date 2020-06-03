@@ -3,6 +3,7 @@ $color-primary-2: #51284f;
 
 $color-heading: #008c8e;
 $color-gallery: #e68585;
+$color-paragraph: #9e88a8;
 
 $color-black: #000000;
 $color-white: #fff;
@@ -15,6 +16,7 @@ $color-gray-light-4: #ccc;
 $color-gray-dark-1: #333;
 $color-gray-dark-2: #777;
 $color-gray-dark-3: #999;
+$color-gray-dark-4: #262129;
 $color-gray-dark-5: #312f2f;
 
 $footer-color-1: #1d1d1d;
@@ -22,3 +24,14 @@ $footer-color-2: #282727;
 
 $text-color-1: #ff015a;
 $text-color-2: #a7039e;
+
+// GRADIENT-COLOR
+$black-blue-gradient: linear-gradient(
+  to top right,
+  #171017,
+  #17152b,
+  #1a090b,
+  #110f1a
+);
+
+$blue-purple-gradient: linear-gradient(to bottom right, #10101a, #482c54);

@@ -1,4 +1,5 @@
 .subscribe {
+  //SUBSCRIBE BOX FUNCTIONALITY
   width: 55%;
   margin: 0 auto;
   padding: 8rem 10rem;
@@ -13,6 +14,7 @@
     }
   }
 
+  // INPUT FORM
   &__form {
     display: flex;
     align-items: center;
@@ -44,6 +46,7 @@
     }
   }
 
+  // SUBSCRIBE BUTTON
   &__btn {
     display: flex;
     align-items: center;
@@ -60,13 +63,7 @@
 
     padding: 1.6rem 2.5rem;
 
-    background-image: linear-gradient(
-      to top right,
-      #171017,
-      #17152b,
-      #1a090b,
-      #110f1a
-    );
+    background-image: $black-blue-gradient;
     cursor: pointer;
     transition: all 0.3s;
     &:hover {

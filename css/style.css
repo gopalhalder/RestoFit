@@ -4,11 +4,11 @@
   20% {
     transform: translateY(0); }
   40% {
-    transform: translateY(1.4rem); }
+    transform: translateY(0.5rem); }
   50% {
     transform: translateY(0); }
   60% {
-    transform: translateY(0.8rem); }
+    transform: translateY(0.3rem); }
   80% {
     transform: translateY(0); }
   100% {
@@ -26,6 +26,10 @@ html {
 
 body {
   box-sizing: border-box; }
+
+::selection {
+  background-color: #e0004d;
+  color: #fff; }
 
 .row {
   max-width: 122rem;
@@ -693,21 +697,24 @@ body {
       .header__container--right::before {
         background-color: #51284f; }
     .header__container-arrow {
-      height: 6.5rem;
-      width: 6.5rem;
+      height: 7rem;
+      width: 7rem;
       border-radius: 50%;
       cursor: pointer;
       box-shadow: 0 0 1rem rgba(0, 0, 0, 0.15);
       display: flex;
-      align-items: center;
       justify-content: center;
       transform: scale(1);
       transition: transform 0.5s, background-color 0.5s; }
       .header__container-arrow--left {
+        align-items: center;
         background-color: #51284f; }
       .header__container-arrow--right {
+        align-items: center;
         background-color: #e0004d; }
       .header__container-arrow--down {
+        align-items: flex-start;
+        padding-top: 0.8rem;
         border: 2px solid #fff;
         height: 5.8rem;
         width: 2.8rem;
@@ -732,8 +739,10 @@ body {
     width: 2.8rem;
     height: 2.8rem; }
     .header__icon--down {
-      width: 1.65rem;
-      height: 1.65rem;
+      width: 2px;
+      border-radius: 1rem;
+      height: 1.6rem;
+      background-color: #fff;
       animation: anim 3s infinite; }
   .header__down-arrow {
     position: absolute;
@@ -750,7 +759,7 @@ body {
   width: 7.8rem;
   border-radius: 50%;
   position: fixed;
-  top: 6rem;
+  top: 5rem;
   right: 6rem;
   display: flex;
   align-items: center;
@@ -858,8 +867,7 @@ body {
     transform: rotateZ(135deg); }
 
 .navigation__overflow-hidden {
-  overflow-x: hidden;
-  overflow-y: hidden; }
+  overflow: hidden; }
 
 .section-about {
   padding: 8rem 0;
@@ -881,5 +889,4 @@ body {
   padding: 10rem 0;
   background-image: linear-gradient(to top right, rgba(255, 255, 255, 0.9), rgba(255, 255, 255, 0.9)), url(../img/subscription-cover.jpg);
   background-size: cover;
-  background-position: center;
   height: 100%; }

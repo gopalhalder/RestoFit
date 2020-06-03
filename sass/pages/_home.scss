@@ -1,12 +1,6 @@
 .section-about {
   padding: 8rem 0;
-  background-image: linear-gradient(
-    to top right,
-    #171017,
-    #17152b,
-    #1a090b,
-    #110f1a
-  );
+  background-image: $black-blue-gradient;
 }
 
 .section-features {
@@ -34,6 +28,5 @@
     ),
     url(../img/subscription-cover.jpg);
   background-size: cover;
-  background-position: center;
   height: 100%;
 }

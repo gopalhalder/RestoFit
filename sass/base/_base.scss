@@ -14,6 +14,11 @@ body {
   box-sizing: border-box;
 }
 
+::selection {
+  background-color: $color-primary;
+  color: $color-white;
+}
+
 .row {
   max-width: 122rem;
   margin: 0 auto;

@@ -1,6 +1,7 @@
 .header {
   position: relative;
 
+  //LOGO
   &__logo-box {
     position: absolute;
     z-index: 1500;
@@ -17,10 +18,12 @@
     width: 11.5rem;
   }
 
+  // HEADER
   &__main {
     display: flex;
   }
 
+  // FUNCTIONALITY
   &__container {
     background-size: cover;
     width: 100%;
@@ -45,6 +48,7 @@
       opacity: 0.6 !important;
     }
 
+    //LEFT SIDE
     &--left {
       background-image: url(../img/hero-large-1.jpg);
       background-position: 100%;
@@ -55,6 +59,7 @@
       }
     }
 
+    //RIGHT SIDE
     &--right {
       background-image: url(../img/hero-large-2.jpg);
       background-position: center;
@@ -64,28 +69,33 @@
       }
     }
 
+    // ARROW CIRCLE FUNCTIONALITY
     &-arrow {
-      height: 6.5rem;
-      width: 6.5rem;
+      height: 7rem;
+      width: 7rem;
       border-radius: 50%;
       cursor: pointer;
       box-shadow: 0 0 1rem rgba($color-black, 0.15);
 
       display: flex;
-      align-items: center;
       justify-content: center;
       transform: scale(1);
       transition: transform 0.5s, background-color 0.5s;
 
       &--left {
+        align-items: center;
         background-color: $color-primary-2;
       }
 
       &--right {
+        align-items: center;
         background-color: $color-primary;
       }
 
+      //HEADER BOTTOM ICON FUNCTIONALITY
       &--down {
+        align-items: flex-start;
+        padding-top: 0.8rem;
         border: 2px solid $color-white;
         height: 5.8rem;
         width: 2.8rem;
@@ -111,6 +121,7 @@
     opacity: 1;
   }
 
+  // TEXT AREA
   &__text-box {
     z-index: 10;
     display: flex;
@@ -119,18 +130,23 @@
     flex-direction: column;
   }
 
+  // SVG ICON LEFT AND RIGHT
   &__icon {
     fill: $color-white;
     width: 2.8rem;
     height: 2.8rem;
 
+    // HEADER ICON BOTTOM
     &--down {
-      width: 1.65rem;
-      height: 1.65rem;
+      width: 2px;
+      border-radius: 1rem;
+      height: 1.6rem;
+      background-color: $color-white;
       animation: anim 3s infinite;
     }
   }
 
+  // HEADER ICON BOX POSITION
   &__down-arrow {
     position: absolute;
     bottom: 0;

@@ -3,13 +3,14 @@
     display: none;
   }
 
+  // HAMBURGER BUTTON
   &__button {
     background-color: $color-white;
     height: 7.8rem;
     width: 7.8rem;
     border-radius: 50%;
     position: fixed;
-    top: 6rem;
+    top: 5rem;
     right: 6rem;
 
     display: flex;
@@ -31,6 +32,7 @@
     }
   }
 
+  // NAVIGATION BACKGROUND
   &__background {
     height: 6rem;
     width: 6rem;
@@ -44,6 +46,7 @@
     transition: transform 0.7s cubic-bezier(0.86, 0, 0.07, 1);
   }
 
+  // NAVIGATION MAIN PART
   &__nav {
     height: 100vh;
     position: fixed;
@@ -165,7 +168,6 @@
   }
 
   &__overflow-hidden {
-    overflow-x: hidden;
-    overflow-y: hidden;
+    overflow: hidden;
   }
 }
