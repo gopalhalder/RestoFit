@@ -95,7 +95,7 @@
       //HEADER BOTTOM ICON FUNCTIONALITY
       &--down {
         align-items: flex-start;
-        padding-top: 0.8rem;
+        padding-top: 0.7rem;
         border: 2px solid $color-white;
         height: 5.8rem;
         width: 2.8rem;
@@ -138,11 +138,11 @@
 
     // HEADER ICON BOTTOM
     &--down {
-      width: 2px;
+      width: 3px;
       border-radius: 1rem;
-      height: 1.6rem;
+      height: 1.4rem;
       background-color: $color-white;
-      animation: anim 3s infinite;
+      animation: anim 2s infinite;
     }
   }
 
