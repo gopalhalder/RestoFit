@@ -1,4 +1,6 @@
 .features {
+  position: relative;
+
   &__heading {
     width: 45%;
     margin-left: 9.4%;
@@ -8,6 +10,13 @@
         left: -23%;
       }
     }
+  }
+
+  &__profile {
+    position: absolute;
+    top: -16%;
+    right: -22.96%;
+    transform: translate(-50%, -50%);
   }
 
   &__container {

@@ -14,11 +14,6 @@ body {
   box-sizing: border-box;
 }
 
-::selection {
-  background-color: $color-primary;
-  color: $color-white;
-}
-
 .row {
   max-width: 122rem;
   margin: 0 auto;
@@ -31,4 +26,26 @@ body {
 .row2 {
   max-width: 114rem;
   margin: 0 auto;
+}
+
+// select text
+::selection {
+  background-color: $color-primary;
+  color: $color-white;
+}
+
+// style scroll bar
+::-webkit-scrollbar {
+  width: 1.7rem;
+}
+
+::-webkit-scrollbar-track {
+  background: $black-blue-gradient-2;
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: $silver-color;
+  box-shadow: inset 2px 2px 2px hsla(0, 0%, 100%, 0.25),
+    inset -2px -2px 2px rgba($color-black, 0.25);
+  border-radius: 10rem;
 }

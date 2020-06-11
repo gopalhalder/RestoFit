@@ -25,12 +25,22 @@ $footer-color-2: #282727;
 $text-color-1: #ff015a;
 $text-color-2: #a7039e;
 
+$silver-color: #cccdc6;
+
 // GRADIENT-COLOR
 $black-blue-gradient: linear-gradient(
   to top right,
   #171017,
   #17152b,
   #1a090b,
+  #110f1a
+);
+
+$black-blue-gradient-2: linear-gradient(
+  90deg,
+  #171017,
+  #201c29 1px,
+  #1a090b 0,
   #110f1a
 );
 
