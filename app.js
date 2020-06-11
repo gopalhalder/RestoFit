@@ -9,8 +9,8 @@ document
     // APPEAR LOGO IN FIXED POSITION 0.3s
     setTimeout(() => {
       document
-        .querySelector(".header__logo-box")
-        .classList.toggle("header__logo-box--position");
+        .querySelector(".logo-box")
+        .classList.toggle("logo-box__position");
     }, 300);
   });
 

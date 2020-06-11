@@ -1,22 +1,22 @@
-.header {
-  position: relative;
-
-  //LOGO
-  &__logo-box {
-    position: absolute;
-    z-index: 1500;
-    top: 4rem;
-    left: 4rem;
-    cursor: pointer;
-
-    &--position {
-      position: fixed;
-    }
-  }
+//LOGO
+.logo-box {
+  position: absolute;
+  z-index: 1500;
+  top: 4rem;
+  left: 4rem;
+  cursor: pointer;
 
   &__logo {
     width: 11.5rem;
   }
+
+  &__position {
+    position: fixed;
+  }
+}
+
+.header {
+  position: relative;
 
   // HEADER
   &__main {
